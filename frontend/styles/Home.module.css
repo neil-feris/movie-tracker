@@ -1,9 +1,9 @@
 .page {
   max-width: 1000px;
   min-height: 100px;
-  margin: 0 auto;
+  margin: 0.5rem auto;
   container-type: inline-size;
-  border: 4px dashed green;
+  /* border: 4px dashed green; */
 }
 
 .container {
@@ -11,7 +11,7 @@
 }
 
 .layout {
-  border: 4px dashed goldenrod;
+  /* border: 4px dashed goldenrod; */
   min-height: 100px;
 }
 
@@ -19,13 +19,23 @@
 .article {
   container-type: inline-size;
   min-height: 100px;
-  border: 4px dashed blue;
+  /* border: 4px dashed blue; */
 }
 
+.card {
+  margin-bottom: 0.25rem;
+  /* border: 4px dashed red; */
+}
 .card h3,
 .card p {
- min-height: 100px;
- border: 4px dashed red;
+  min-height: 100px;
+  /* border: 4px dashed red; */
+}
+
+.image {
+  border-radius: 2rem 2rem 0 0;
+  background-position: center 10%;
+  min-height: 250px;
 }
 
 @container (min-width: 36rem) {
@@ -34,13 +44,17 @@
     grid-template-columns: 1fr 3fr;
     grid-gap: 1rem;
   }
-}
 
+  .image {
+    border-radius: 2rem 0 0 2rem;
+    min-height: 250px;
+  }
+}
 
 @container (min-width: 800px) {
   .layout {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 1rem;
   }
 }

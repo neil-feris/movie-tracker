@@ -21,6 +21,7 @@ export const getMovie = async (req, res) => {
     console.log("getMovie");
     // get the movie id from the request params
     let movieId = req.params.id;
+    console.log(movieId);
     // check if the movie id is a number
     if (isNaN(movieId)) {
       // if not a number return 400
