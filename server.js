@@ -9,17 +9,11 @@ import moviesRoute from "./routes/movie.route.js";
 // import movieLists route
 import movieListsRoute from "./routes/movieList.route.js";
 
-// // import todos route
-// import todosRoute from "./routes/todo.route.js";
-// // import login route
-// import loginRoute from "./routes/login.route.js";
-// // import signup route
-// import signupRoute from "./routes/signup.route.js";
-
 const app = express();
 
 // setup cors
 app.use(cors());
+
 // express middleware to parse json we no longer need body-parser
 app.use(express.json());
 
